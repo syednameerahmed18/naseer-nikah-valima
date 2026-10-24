@@ -19,7 +19,8 @@ const events = [
         title: "MEHFIL-E-NIKAH",
         subtitle: "The Nikah Ceremony",
         date: "27th November 2026",
-        time: "7:00 PM Onwards",
+        time: "8:00 PM Onwards",
+        details: ["Nikah After Asr", "Dinner 8:00 PM Onwards"],
         venue: nikahVenueName,
         address: nikahVenueAddress,
     },
@@ -28,7 +29,7 @@ const events = [
         title: "DAWAT-E-VALIMA",
         subtitle: "The Wedding Reception",
         date: "28th November 2026",
-        time: "7:00 PM Onwards",
+        time: "8:00 PM Onwards",
         venue: venueName,
         address: venueAddress,
     },
@@ -206,14 +207,28 @@ function EventCard({ event, flipped, onFlip }) {
                         style={{ backgroundColor: colors.border }}
                     />
 
-                    {/* Date and time */}
-                    <div className="space-y-1">
+                    {/* Date and event timings */}
+                    <div className="space-y-2">
                         <p className="text-sm font-semibold tracking-wide text-[#984D68]">
                             {event.date}
                         </p>
-                        <p className="text-sm text-[#805665]">
-                            {event.time}
-                        </p>
+
+                        {event.details ? (
+                            <div className="mt-3 space-y-2">
+                                {event.details.map((detail, index) => (
+                                    <p
+                                        key={index}
+                                        className="text-sm font-medium text-[#805665]"
+                                    >
+                                        {detail}
+                                    </p>
+                                ))}
+                            </div>
+                        ) : (
+                            <p className="text-sm text-[#805665]">
+                                {event.time}
+                            </p>
+                        )}
                     </div>
 
                     {/* Location icon */}
