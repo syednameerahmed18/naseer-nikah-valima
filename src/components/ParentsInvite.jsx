@@ -138,68 +138,86 @@ function ParentsInvite({ onNext }) {
                             {/* LEFT SIDE: Parents' Names */}
                             <motion.section
                                 className="flex flex-col items-center
-                                justify-center
-                                min-[760px]:border-r
-                                min-[760px]:border-[#D9AAB8]/60
-                                min-[760px]:pr-7"
+    justify-center
+    min-[760px]:border-r
+    min-[760px]:border-[#D9AAB8]/60
+    min-[760px]:pr-7"
                                 initial={{ opacity: 0, x: -12 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.8, delay: 0.55 }}
                             >
                                 <p
                                     className="mb-1 font-serif text-[9px]
-                                    uppercase tracking-[0.16em]
-                                    text-[#984D68]
-                                    min-[400px]:text-[10px]
-                                    sm:text-xs sm:mb-3
-                                    min-[760px]:mb-5"
+        uppercase tracking-[0.16em]
+        text-[#984D68]
+        min-[400px]:text-[10px]
+        sm:text-xs sm:mb-3
+        min-[760px]:mb-5"
                                 >
                                     Together with our families
                                 </p>
 
                                 {/* Groom's Parents */}
-                                <h2
-                                    className="font-wedding text-2xl
-                                    leading-tight text-[#87435B]
-                                    min-[400px]:text-[26px]
-                                    sm:text-4xl
-                                    min-[760px]:text-4xl lg:text-5xl"
-                                >
-                                    Mrs. &amp; Mr.
-                                    <span className="mt-0.5 block">
-                                        Syed Noor Ahmed
-                                    </span>
-                                </h2>
+                                <div className="flex flex-col items-center">
+                                    <h2
+                                        className="font-wedding text-2xl
+            leading-tight text-[#87435B]
+            min-[400px]:text-[26px]
+            sm:text-4xl
+            min-[760px]:text-4xl lg:text-5xl"
+                                    >
+                                        Mr. Syed Noor Ahmed
+                                    </h2>
+
+                                    <h2
+                                        className="font-wedding text-2xl
+            leading-tight text-[#87435B]
+            min-[400px]:text-[26px]
+            sm:text-4xl
+            min-[760px]:text-4xl lg:text-5xl"
+                                    >
+                                        Mrs. Nuzhath Jabeen
+                                    </h2>
+                                </div>
 
                                 {/* Ampersand */}
                                 <div
                                     className="my-0.5 font-wedding
-                                    text-xl text-[#B78391]
-                                    sm:my-2 sm:text-3xl
-                                    min-[760px]:my-3"
+        text-xl text-[#B78391]
+        sm:my-2 sm:text-3xl
+        min-[760px]:my-3"
                                 >
                                     &amp;
                                 </div>
 
                                 {/* Bride's Parents */}
-                                <h2
-                                    className="font-wedding text-2xl
-                                    leading-tight text-[#87435B]
-                                    min-[400px]:text-[26px]
-                                    sm:text-4xl
-                                    min-[760px]:text-4xl lg:text-5xl"
-                                >
-                                    Mrs. &amp; Mr.
-                                    <span className="mt-0.5 block">
-                                        Abdullah
-                                    </span>
-                                </h2>
+                                <div className="flex flex-col items-center">
+                                    <h2
+                                        className="font-wedding text-2xl
+            leading-tight text-[#87435B]
+            min-[400px]:text-[26px]
+            sm:text-4xl
+            min-[760px]:text-4xl lg:text-5xl"
+                                    >
+                                        Mr. Abdullah
+                                    </h2>
+
+                                    <h2
+                                        className="font-wedding text-2xl
+            leading-tight text-[#87435B]
+            min-[400px]:text-[26px]
+            sm:text-4xl
+            min-[760px]:text-4xl lg:text-5xl"
+                                    >
+                                        Mrs. Ameena Mohammadi
+                                    </h2>
+                                </div>
 
                                 {/* Desktop Ornament */}
                                 <div
                                     className="mt-4 hidden items-center
-                                    justify-center gap-3
-                                    min-[760px]:flex"
+        justify-center gap-3
+        min-[760px]:flex"
                                 >
                                     <span className="h-px w-8 bg-[#B78391]" />
                                     <span className="text-[#B78391]">❦</span>
